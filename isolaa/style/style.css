@@ -1,0 +1,144 @@
+body{
+    background: url('./isolawallpaper.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    color: #F8E16C;
+    font-weight: 700;
+
+}
+
+.rules{
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    color: #d2b422;
+    font-weight: 300;
+    font-size: medium;
+}
+
+h2{
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    color: #d2b422;
+    font-weight: 400;
+    font-size: medium;
+}
+
+#grid{
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    aspect-ratio: 1/1;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.col{
+    background: transparent;
+    border: 1px solid #F8E16C;
+    aspect-ratio: 1/1;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+}
+
+.turn{
+    display: flex;
+    font-size: x-large;
+    height: 20%;
+    justify-content: center;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    background: #172121;
+    opacity: 90%;
+    margin-top: 7%;
+    width: 20%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.option {  
+    display: flex;
+    background: #172121;
+    opacity: 90%;
+    margin-top: 23%;
+    width: 20%;
+    height: 15vh;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.winner{
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    height: 30%;
+    width: 10;
+    color: #d2b422;
+    font-weight: 600;
+    font-size: large;
+}
+
+.restart{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 40%;
+    height: 30px;
+    background-color: #014B88 ;
+    color: #F5D223;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.restart:hover{
+    background-color: #055faa;
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.player1 {
+    background-color: red;
+    border-radius: 80%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .player2 {
+    background-color: blue;
+    border-radius: 60%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .blocked{
+    background: #F5D223;
+  }
